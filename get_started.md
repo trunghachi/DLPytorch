@@ -1,3 +1,5 @@
+# Bắt đầu thôi nào!
+
 Dưới đây là các bước để tạo một dự án từ Visual Studio Code (VSCode), chứa một bài viết, và sau đó đẩy nó lên GitHub:
 
 ## Tạo một thư mục mới cho dự án của bạn:
