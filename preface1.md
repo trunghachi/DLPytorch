@@ -10,7 +10,7 @@ Một vài nguồn tài liệu tiếng Việt, hoặc được dịch, chuyển 
 
 Một số nguồn tiếng Anh tuyệt vời, rất dễ đọc và có đầy đủ ví dụ đi kèm:
 * [Machine Learning Mastery](https://machinelearningmastery.com/)
-* [Computer Vision, Deep Learning and OpenCV](https://pyimagesearch.com/)
+* [omputer Vision, Deep Learning and OpenCV](https://pyimagesearch.com/)
 * [Learn mathematics for data science and machine learning](https://hadrienj.github.io/)
 
 Nếu bạn giỏi toán và/hoặc rất yêu thích toán, bạn nên đọc những tài liệu này (à, còn mình thì không):
@@ -33,7 +33,7 @@ Tuy nhiên, tùy vào khả năng và cách tiếp cận của bạn, bạn có 
 
 Mỗi tác giả khác nhau lại sử dụng một hệ thống ký hiệu toán học khác nhau. Vì vậy, chúng ta chỉ nên tập trung vào ý nghĩa, cách vận hành của phương pháp, và các cài đặt, triển khai chúng trên thực tế, thay vì sa đà vào những tầng lớp hay nguồn cơn sâu xa về mặt toán học. Nói một cách khác, cố gắng giản đơn một cách hết mức có thể các vấn đề về toán (những thứ đã được các nhà toán học chứng minh) mà chỉ cần hiểu ý nghĩa và cách vận dụng chúng.
 
-Tôi đã xem qua nhiều tài liệu dạy về học máy, học sâu, cũng tham khảo một số khóa học online. Tuy nhiên có lẽ do mất gốc về kiến thức toán học, lại chưa đủ sử kiên trì, và tính cả thèm nhưng chóng chán, nên không tài liệu nào tôi theo dõi đủ đầu đuôi, mãi vẫn không nhập tâm được điều gì. Cho đến năm 2022. Tôi gặp cuốn sách [Deep learning with Pytorch Step-by-step. A Beginner’s Guidep](https://leanpub.com/pytorch) tạm dịch là Học sâu với Pytorch, từng bước cho người mới bắt đầu, của tác giả [Daniel Voigt Godoy](https://www.linkedin.com/in/dvgodoy/). Tôi đã đọc nó một mạch từ đầu đến cuối với niềm hứng thú. Trong đầu chợt liên hệ với những khó khăn mà một số bạn mới bắt đầu vào lĩnh vực học máy, học sâu đang gặp phải.
+Tôi đã xem qua nhiều tài liệu dạy về học máy, học sâu, cũng tham khảo một số khóa học online. Tuy nhiên có lẽ do mất gốc về kiến thức toán học, lại chưa đủ sử kiên trì, và tính cả thèm nhưng chóng chán, nên không tài liệu nào tôi theo dõi đủ đầu đuôi, mãi vẫn không nhập tâm được điều gì. Cho đến năm 2022. Tôi gặp cuốn sách [Deep learning with Pytorch Step-by-step. A Beginner’s Guide](https://leanpub.com/pytorch) tạm dịch là Học sâu với Pytorch, từng bước cho người mới bắt đầu, của tác giả [Daniel Voigt Godoy](https://www.linkedin.com/in/dvgodoy/). Tôi đã đọc nó một mạch từ đầu đến cuối với niềm hứng thú. Trong đầu chợt liên hệ với những khó khăn mà một số bạn mới bắt đầu vào lĩnh vực học máy, học sâu đang gặp phải.
 
  Vì vậy, tôi bắt đầu viết loạt bài này với phần lớn nội dung tuân thủ theo cuốn sách trên, lược bớt hoặc bổ sung một số phần mà theo quan điểm của cá nhân tôi là cần thiết. Tuy nhiên không giới hạn ở đó, có rất nhiều nguồn tài liệu và ví dụ tham khảo khác được thêm vào, như tài liệu [An Introduction to Statistical Learning](https://www.statlearning.com/) chẳng hạn và vô số nguồn tài liệu khác nữa mà bạn sẽ gặp trong các phần tiếp theo. Hy vọng, Loạt bài viết này sẽ phần nào đó giúp đỡ chính tôi và các bạn, hệ thống hóa lại kiến thức, một các cơ bản nhất, về học máy và học sâu, theo đúng phong cách của những người chập chững mới tập đi, từng bước từng bước một.
 
@@ -57,7 +57,7 @@ Và thật là tuyện vời nếu bạn đã trang bị cho mình một số ki
  * đã biết một số khái niệm cơ bản trong học máy (ML), học sâu (DL) như học có giám sát, hàm mất mát, underfitting và overfitting, v.v.
 
 ## Tại sao là Pytorch?
-Tất nhiên rồi, để nắm bắt học sâu, đồng nghĩa bạn phải học một trong các nền tảng như \pyth{Tensorflow} và/hoặc \pyth{Pytorch}. Mã \pyth{Pytorch} thì có vẻ giống python hơn, hoặc đơn giản chỉ vì cuốn sách gốc tác giả trình bày các ví dụ bằng Pytorch. Hoặc lý do khác, ai biết được, nhưng mình cũng thích \pyth{Pytorch} hơn và mình không biết nhiều lắm về \pyth{Tensorflow} và các nền tảng khác. Bạn có thể thử hỏi Copilot hoặc GPT với câu hỏi: "đoạn mã ... với Tensorflow sẽ như thế nào". 
+Tất nhiên rồi, để nắm bắt học sâu, đồng nghĩa bạn phải học một trong các nền tảng như `Tensorflow` và/hoặc `Pytorch`. Mã `Pytorch` thì có vẻ python hơn, hoặc đơn giản chỉ vì cuốn sách gốc tác giả trình bày các ví dụ bằng `Pytorch`. Hoặc lý do khác, ai biết được, nhưng bản thân tôi cũng thích `Pytorch` hơn và một lý do nữa là không hiểu biết lắm về `Tensorflow` và các nền tảng khác. Cũng không sao, nếu bạn không thích Pytorch thì bạn đã không đọc đến đây và có thể thử hỏi Copilot hoặc GPT với câu hỏi: "đoạn mã ... với Tensorflow sẽ như thế nào". 
 
 > [!TIP]
 > "*Tôi đã sử dụng PyTorch được vài tháng và tôi chưa bao giờ cảm thấy tốt hơn. Tôi có nhiều năng lượng hơn. Da tôi sáng hơn. Thị lực của tôi đã được cải thiện*". [Andrej Karpathy](https://karpathy.ai/) - AI Director at Tesla, một nhân vật nổi tiếng trong lĩnh vực AI, đã mô tả như vậy trên [X](https://twitter.com/karpathy/status/868178954032513024).
