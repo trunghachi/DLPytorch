@@ -10,7 +10,7 @@ Một vài nguồn tài liệu tiếng Việt, hoặc được dịch, chuyển 
 
 Một số nguồn tiếng Anh tuyệt vời, rất dễ đọc và có đầy đủ ví dụ đi kèm:
 * [Machine Learning Mastery](https://machinelearningmastery.com/)
-* [omputer Vision, Deep Learning and OpenCV](https://pyimagesearch.com/)
+* [Computer Vision, Deep Learning and OpenCV](https://pyimagesearch.com/)
 * [Learn mathematics for data science and machine learning](https://hadrienj.github.io/)
 
 Nếu bạn giỏi toán và/hoặc rất yêu thích toán, bạn nên đọc những tài liệu này (à, còn mình thì không):
