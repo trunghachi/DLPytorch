@@ -22,4 +22,4 @@ Dưới đây là các bước để tạo một dự án từ Visual Studio Cod
 * Trở lại Terminal trong VSCode, thêm URL này như một remote bằng lệnh `git remote add origin YOUR_GITHUB_REPO_URL`.
 * Cuối cùng, đẩy dự án của bạn lên GitHub bằng lệnh `git push -u origin master`.
 
-Vậy là bạn đã tạo và đẩy một dự án chứa một bài viết lên GitHub từ VSCode! Hãy nhớ thay YOUR_GITHUB_REPO_URL bằng URL thực tế của kho lưu trữ GitHub của bạn. Chúc bạn thành công! 😊 (Nguồn: Copilot)
+Vậy là bạn đã tạo và đẩy một dự án chứa một bài viết lên GitHub từ VSCode! Hãy nhớ thay `YOUR_GITHUB_REPO_URL` bằng `URL` thực tế của kho lưu trữ GitHub của bạn. Chúc bạn thành công! 😊 (Nguồn: Copilot)
