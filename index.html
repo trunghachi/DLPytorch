@@ -1,520 +1,67 @@
-
 <!DOCTYPE html>
 <html>
-
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-<meta charset="utf-8" />
-<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-<title>Khoa học dữ liệu</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- Style for main home page -->
-<link rel="stylesheet" href="/assets/css/styles.css?t=2022-06-10 07:47:53 +0000">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-<link rel="icon" type="image/jpg" href="/assets/images/logo.jpg" sizes="32x32">
-<link rel="canonical" href="https://phamdinhkhanh.github.io"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="author" content="Phạm Đình Khánh" />
-<meta property="og:title" content="" />
-<meta property="og:site_name" content="Khanh's blog" />
-<meta property="og:url" content="https://phamdinhkhanh.github.io" />
-<meta property="og:description" content="" />
-
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="" />
-
-
-<meta property="article:author" content="Khanh" />
-<meta property="article:section" content="" />
-
-<link rel="alternate" type="application/atom+xml" title="Khanh's blog - Atom feed" href="/feed.xml" />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3V21G183P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L3V21G183P');
-</script>
+<head>
+    <title>Trang chủ</title>
+    <style>
+        #container {
+            display: flex;
+        }
+        #menu {
+            width: 20%;
+        }
+        #content {
+            width: 80%;
+        }
+        #toolbar {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
-<style>
-body {
-  padding: 0 7.5%;
-}
-</style>
-
 <body>
-	<div content = "container">
-		<div class="row">
-			<div class="col-md-2 hidden-xs hidden-sm">
-				<a  href="/">
-					<img width="100%" style="padding-bottom: 3mm;" src="/assets/images/img.png" /> </a>
-				<br>
-				<nav>
-					<div class="header">Latest</div>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2021/03/13/KnownledgeDistillation.html">Bài 56 - Knowledge Distillation</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2021/02/08/BuildBlog.html">Appendix 2 - How this blog is built</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2021/02/01/StarGAN.html">Lesson 55 - StarGAN Multi-Domain Image2Image translation</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2021/01/20/CycleGAN.html">Lesson 54 - CycleGAN Unpaired image to image translation</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/12/19/Resnet.html">Lesson 53 - ResNet model</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/11/30/ParallelComputingPython.html">Bài 52 - Parallel Computing on Python</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/11/23/Quantization.html">Bài 51 - Quantization trong deep learning</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/11/17/DockerDL.html">Bài 50 - Docker cho Deep Learning</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/11/13/pix2pixGAN.html">Bài 49 - Pix2Pix GAN</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/09/19/MobileNet.html">Bài 48 - Mobilenet model</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/08/23/FocalLoss.html">Bài 47 - Focal Loss trong RetinaNet</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/08/13/ModelMetric.html">Bài 46 - Đánh giá mô hình phân loại trong ML</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/08/09/ConditionalGAN.html">Bài 45 - Conditional GAN (cGAN)</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/07/25/GAN_Wasserstein.html">Bài 44 - Model Wasserstein GAN (WGAN)</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/07/13/GAN.html">Bài 43 - Model GAN</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/06/20/Unet.html">Bài 42 - Thực hành Unet</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/06/18/DeepLab.html">Bài 41 - DeepLab Sentiment Segmentation</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/06/10/ImageSegmention.html">Bài 40 - Image Segmentation</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/06/04/PhoBERT_Fairseq.html">Bài 39 - Thực hành ứng dụng BERT</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/05/31/CNNHistory.html">Bài 38 - Các kiến trúc CNN hiện đại</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/05/28/TransformerThemDauTV.html">Bài 37 - Transformer thêm dấu Tiếng Việt</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/05/23/BERTModel.html">Bài 36 - BERT model</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/05/05/MultitaskLearning_MultiBranch.html">Bài 35 - Multitask Learning - Multi Branch</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/04/22/MultitaskLearning.html">Bài 34 - Multitask Learning</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/04/15/TransferLearning.html">Bài 33 - Phương pháp Transfer Learning</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/04/09/TensorflowDataset.html">Bài 32 - Kĩ thuật tensorflow Dataset</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/04/03/AWS.html">Bài 31 - Amazon Virtual Machine Deep Learning</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/03/28/deployTensorflowJS.html">Bài 30 - Xây dựng Web AI trên tensorflow js</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/03/23/FlaskRestAPI.html">Bài 29 - Xây dựng Flask API cho mô hình deep learning</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/03/21/faceNet.html">Bài 28 - Thực hành training Facenet</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/03/12/faceNetAlgorithm.html">Bài 27 - Mô hình Facenet trong face recognition</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/03/10/DarknetGoogleColab.html">Bài 26 - Huấn luyện YOLO darknet trên google colab</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/03/09/DarknetAlgorithm.html">Bài 25 - YOLO You Only Look Once</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/02/17/ImbalancedData.html">Bài 24 - Mất cân bằng dữ liệu (imbalanced dataset)</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/02/11/NARSyscom2015.html">Bài 23 - Neural Attentive Session-Based Recommendation</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/01/17/ScoreCard.html">Bài 22 - Scorecard model</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2020/01/06/ImagePreprocessing.html">Bài 21 - Tiền xử lý ảnh OpenCV</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/12/26/Sorfmax_Recommendation_Neural_Network.html">Bài 20 - Recommendation Neural Network</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/12/12/ARIMAmodel.html">Bài 19 - Mô hình ARIMA trong time series</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/12/02/DeepLearningLayer.html">Bài 18 - Các layers quan trọng trong deep learning</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/11/22/HOG.html">Bài 17 - Thuật toán HOG (Histrogram of oriented gradient)</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/11/08/RFMModel.html">Bài 16 - Model RFM phân khúc khách hàng</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/11/04/Recommendation_Compound_Part1.html">Bài 15 - collaborative và content-based filtering</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/10/22/googleHeatmap.html">Bài 14 - Biểu đồ trên Google Map</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/10/05/SSDModelObjectDetection.html">Bài 13 - Model SSD trong Object Detection</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/09/29/OverviewObjectDetection.html">Bài 12 - Các thuật toán Object Detection</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/09/16/VisualizationPython.html">Bài 11 - Visualization trong python</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/09/08/LDATopicModel.html">Bài 10 - Thuật toán LDA - Xác định Topic</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/08/25/PyTorch_Torchtext_Tutorial.html">Bài 9 - Pytorch - Buổi 3 - torchtext module NLP</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/08/22/convolutional-neural-network.html">Bài 8 - Convolutional Neural Network</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/08/19/CorrectSpellingVietnamseTonePrediction.html">Bài 7 - Pytorch - Buổi 2 - Seq2seq model correct spelling</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/08/10/PytorchTurtorial1.html">Bài 6 - Pytorch - Buổi 1 - Làm quen với pytorch</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/07/15/PySparkSQL.html">Bài 5 - Model Pipeline - SparkSQL</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/06/18/AttentionLayer.html">Bài 4 -  Attention is all you need</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/05/10/Hypothesis_Statistic.html">Apenddix 1 - Lý thuyết phân phối và kiểm định thống kê</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/04/29/ModelWord2Vec.html">Bài 3 - Mô hình Word2Vec</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/04/22/Ly_thuyet_ve_mang_LSTM.html">Bài 2 - Lý thuyết về mạng LSTM part 2</a></li>
-					
-					<li><a style="text-align: left; color: #074B80"  href="/2019/01/07/Ky_thuat_feature_engineering.html">Bài 1 - Kĩ thuật feature engineering</a></li>
-					
-				</nav>
-			</div>
-			<div class="col-md-8 col-xs-12" style="z-index:1">
-				<nav class="navbar navbar-inverse" style="background-color: #046897">
-					<div class = "container-fluid">
-						<div class = "navbar-header">
-							<a class="navbar-brand" href="/">
-								<p style="color:#FFF">Khoa học dữ liệu - Khanh's blog</p>
-							</a>
-							<button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="collapse navbar-collapse navbar-right" id="myNavbar">
-							<ul class="nav navbar-nav">
-								<li><a href="/home"><span style="color: #fff"> Home</span></a></li>
-								<li><a href="/about"><span style="color: #fff"> About</span></a></li>
-								<!-- <li><a href="/da"><span style="color: #fff">Data Analytics</span></a></li> -->
-								<!-- <li><a href="/cv"><span style="color: #fff">Computer Vision</span></a></li> -->
-								<!-- <li><a href="/nlp"><span style="color: #fff">NLP</span></a></li> -->
-								<!-- <li><a href="/code"><span style="color: #fff">Code</span></a></li> -->
-								<li><a href="/book"><span style="color: #fff">Book</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-				<div class="PageNavigation">
-				</div>
-				<h1 itemprop="name" class="post-title"></h1>
-				<div id="bootstrap-overrides">
-					<div>Chào mừng bạn đã đến với trang web của tôi. Như chúng ta đã biết. Ngày nay vai trò của AI ngày càng trở nên quan trọng đối với cuộc sống. Chúng ta có thể tìm thấy ứng dụng của AI ở khắp mọi nơi như hệ thống nhận diện khuôn mặt, bài toán dịch máy, hệ thống khuyến nghị sản phẩm. AI có thể nói đang là hot trend ở thế kỷ 21 và trong tương lai đây vẫn là một lĩnh vực tiếp tục sẽ bùng nổ. Tại Việt Nam thì xu hướng học tập và nghiên cứu về AI chỉ mới bắt đầu vào những năm 2016 và chúng ta là một cộng đồng còn khá non trẻ. Chính vì thế chúng ta rất thiếu những nguồn tài liệu tốt. Nhiều bạn sinh viên muốn học AI mà không biết nên học như thế nào? Tìm kiếm nguồn tài liệu từ đâu?
-
-Xuất phát từ nhu cầu đó, mình xây dựng website này nhằm mục đích giúp đỡ các bạn học sinh, sinh viên tìm hiểu về AI một cách đơn giản và hệ thống hơn.
-Tại đây các bạn có thể tìm kiếm được rất nhiều các bài viết liên quan tới đa dạng các lĩnh vực trong AI như các domain được liệt kê bên dưới:
-
-<h1>Thị giác máy tính</h1>
-<br />
-Thị giác máy tính (computer vision) là một trong những lĩnh vực rất quan trọng trong AI giúp giải quyết được nhiều bài toán liên quan tới phân loại ảnh, nhận diện vật thể, phân khúc hình ảnh, xác thực khuôn mặt,.... Thị giác máy tính có nhiều tiềm năng ứng dụng trong các ngành công nghiệp như sản xuất ô tô, thiết bị thông minh, robotics,.... Không những thế  trong y sinh nó còn giúp bác sĩ chuẩn đoán vị trí khối u dựa trên mô hình nhận diện khối u. Trong quản lý giao thông chúng ta cũng có thể ứng dụng thị giác máy tính để đếm lưu lượng xe cộ. Thuật toán OCR tự động trích xuất nội dung chữ từ ảnh chụp văn bản,.... và còn rất rất nhiều những ứng dụng tiềm năng khác của thị giác máy tính mà các bạn sẽ được tìm hiểu và thực hành qua loạt bài viết này.
-
-<br />
-<br />
-
-<div class="fontsize">
-<ol>
-    <li>
-        <a href="./2019/11/22/HOG.html">Tạo lập đặc trưng HOG</a>
-    </li>
-    <li>
-        <a href="./2019/08/22/convolutional-neural-network.html">Mạng tích chập</a>
-    </li>
-    <li>
-        <a href="./2020/05/31/CNNHistory.html">Lịch sử CNN</a>
-    </li>
-    <li>
-        <a href="./2020/09/19/MobileNet.html">Mô hình MobileNet</a>
-    </li>
-    <li>
-        <a href="./2020/12/19/Resnet.html">Mô hình ResNet</a>
-    </li>
-    <li>
-        <a href="./2019/09/29/OverviewObjectDetection.html">Bài toán object detection</a>
-    </li>
-    <li>
-        <a href="./2019/10/05/SSDModelObjectDetection.html">Mô hình SSD</a>
-    </li>
-    <li>
-        <a href="./2019/12/02/DeepLearningLayer.html">Các layers quan trọng trong deep learning</a>
-    </li>
-    <li>
-        <a href="./2020/01/06/ImagePreprocessing.html">Tiền xử lý ảnh trong opencv</a>
-    </li>
-    <li>
-        <a href="./2020/03/09/DarknetAlgorithm.html">Mô hình YOLO</a>
-    </li>
-    <li>
-        <a href="./2020/03/10/DarknetGoogleColab.html">Huấn luyện mô hình YOLO</a>
-    </li>
-    <li>
-        <a href="./2020/08/23/FocalLoss.html">RetinaNet và Focal Loss</a>
-    </li>
-    <li>
-        <a href="./2020/06/10/ImageSegmention.html">Bài toán Image Segmention</a>
-    </li>
-    <li>
-        <a href="./2020/06/20/Unet.html">Mô hình Unet Image Segmentation</a>
-    </li>
-    <li>
-        <a href="./2020/06/18/DeepLab.html">Mô hình DeepLab trong Image Segmentation</a>
-    </li>
-    <li>
-        <a href="./2020/03/12/faceNetAlgorithm.html">Nhận diện khuôn mặt</a>
-    </li>
-    <li>
-        <a href="./2020/03/21/faceNet.html">Huấn luyện mô hình faceNet</a>
-    </li>
-    <li>
-        <a href="./2020/04/15/TransferLearning.html">Phương pháp transfer learning</a>
-    </li>
-    <li>
-        <a href="./2020/04/22/MultitaskLearning.html">Học đa nhiệm vụ Multi-task learning part1</a>
-    </li>
-    <li>
-        <a href="./2020/05/05/MultitaskLearning_MultiBranch.html">Học đa nhiệm vụ Multi-task learning part2</a>
-    </li>
-    <li>
-        <a href="./2021/03/13/KnownledgeDistillation.html">học chắt lọc knowledge distillation</a>
-    </li>
-    <li>
-        <a href="./2020/03/23/FlaskRestAPI.html">Triển khai mô hình trên flask API</a>
-    </li>
-    <li>
-        <a href="./2020/03/28/deployTensorflowJS.html">Triển khai mô hình trên tensorflowjs</a>
-    </li>
-    <li>
-        <a href="./2020/04/03/AWS.html">Máy ảo AWS</a>
-    </li>
-    <li>
-        <a href="./2020/04/09/TensorflowDataset.html">Kỹ thuật tensorflow dataset</a>
-    </li>
-    <li>
-        <a href="./2020/11/17/DockerDL.html">Docker cho Deep Learning</a>
-    </li>
-    <li>
-        <a href="./2020/11/23/Quantization.html">Kỹ thuật quantization</a>
-    </li>
-    <li>
-        <a href="./2020/11/30/ParallelComputingPython.html">Xử lý đa luồng trong python</a>
-    </li>
-</ol>
-</div>
-
-<h1>Xử lý ngôn ngữ tự nhiên</h1>
-<div class="fontsize">
-    <ol>
-        <li>
-            <a href="./2019/04/29/ModelWord2Vec.html">Word2Vec</a>
-        </li>
-        <li>
-            <a href="./2019/04/22/Ly_thuyet_ve_mang_LSTM.html">Mô hình LSTM</a>
-        </li>
-        <li>
-            <a href="./2019/06/18/AttentionLayer.html">Attention và kỹ thuật Transformer</a>
-        </li>
-        <li>
-            <a href="./2020/05/23/BERTModel.html">Mô hình BERT</a>
-        </li>
-        <li>
-            <a href="./2020/05/28/TransformerThemDauTV.html">Ứng dụng kiến trúc Transformer trong thêm dấu Tiếng Việt</a>
-        </li>
-        <li>
-            <a href="./2020/06/04/PhoBERT_Fairseq.html">Thực hành mô hình PhoBERT</a>
-        </li>
-    </ol>
-</div>
-
-
-<h1>Machine Learning</h1>
-<div class="fontsize">
-    <ol>
-        <li>
-            <a href="/2019/05/10/Hypothesis_Statistic.html">Ôn tập về xác suất thống kê</a>
-        </li>
-        <li>
-            <a href="./2019/01/07/Ky_thuat_feature_engineering.html">Kỹ thuật Feature Engineering</a>
-        </li>
-        <li>
-            <a href="./2019/07/15/PySparkSQL.html">Thiết kế machine learning pipeline và Spark SQL</a>
-        </li>
-        <li>
-            <a href="./2019/09/08/LDATopicModel.html">LDA và bài toán xác định topic văn bản</a>
-        </li>
-        <li>
-            <a href="./2019/09/16/VisualizationPython.html">Biểu đồ trên matplotlib</a>
-        </li>
-        <li>
-            <a href="./2019/10/22/googleHeatmap.html">Các vẽ biểu đồ  map</a>
-        </li>
-        <li>
-            <a href="./2019/11/08/RFMModel.html">Mô hình phân khúc khách hàng</a>
-        </li>
-        <li>
-            <a href="./2019/12/12/ARIMAmodel.html">Mô hình chuỗi thời gian ARIMA</a>
-        </li>
-        <li>
-            <a href="./2020/01/17/ScoreCard.html">Mô hình scorecard</a>
-        </li>
-        <li>
-            <a href="./2020/02/17/ImbalancedData.html">Hiện tượng mất cân bằng dữ liệu</a>
-        </li>
-    </ol>
-</div>
-
-
-<h1>Hệ thống khuyến nghị sản phẩm</h1>
-<div class="fontsize">
-    <ol>
-        <li>
-            <a href="./2019/11/04/Recommendation_Compound_Part1.html">collaborative và content-based filtering</a>
-        </li>
-        <li>
-            <a href="./2019/12/26/Sorfmax_Recommendation_Neural_Network.html">softmax network trong khuyến nghị sản phẩm</a>
-        </li>
-        <li>
-            <a href="./2020/02/11/NARSyscom2015.html">Bài toán khuyễn nghị theo session</a>
-        </li>
-        <li>
-            <a href="./2019/09/08/LDATopicModel.html">LDA và bài toán xác định topic văn bản</a>
-        </li>
-        <li>
-            <a href="./2019/09/16/VisualizationPython.html">Biểu đồ trên matplotlib</a>
-        </li>
-        <li>
-            <a href="./2019/10/22/googleHeatmap.html">Các vẽ biểu đồ  map</a>
-        </li>
-        <li>
-            <a href="./2020/08/13/ModelMetric.html">Đánh giá mô hình phân loại trong machine learning</a>
-        </li>
-    </ol>
-</div>
-
-
-<h1>Series về GAN</h1>
-<div class="fontsize">
-    <ol>
-        <li>
-            <a href="./2020/07/13/GAN.html">Mô hình GAN</a>
-        </li>
-        <li>
-            <a href="./2020/08/09/ConditionalGAN.html">Mô hình cGAN</a>
-        </li>
-        <li>
-            <a href="./2020/07/25/GAN_Wasserstein.html">Wasserstein GAN</a>
-        </li>
-        <li>
-            <a href="./2020/11/13/pix2pixGAN.html">Pix2Pix GAN</a>
-        </li>
-        <li>
-            <a href="./2021/01/20/CycleGAN.html">mô hình cycleGAN</a>
-        </li>
-        <li>
-            <a href="./2021/02/01/StarGAN.html">mô hình starGAN</a>
-        </li>
-    </ol>
-</div>
-
-
-<h1>Hướng dẫn pytorch</h1>
-<div class="fontsize">
-    <ol>
-        <li>
-            <a href="./2019/08/10/PytorchTurtorial1.html">Tensor và toán tử trên pytorch</a>
-        </li>
-        <li>
-            <a href="./2019/08/19/CorrectSpellingVietnamseTonePrediction.html">Huấn luyện mô hình sửa lỗi chính tả</a>
-        </li>
-        
-        <li>
-            <a href="./2019/08/25/PyTorch_Torchtext_Tutorial.html">Module torchtext trong NLP</a>
-        </li>
-    </ol>
-</div></div>
-
-				</div>
-			</div>
-			<div class="col-md-2 hidden-xs hidden-sm">
-				<a  href="/">
-					<img width="100%" style="padding-bottom: 3mm;" src="/assets/images/logo.jpg" /> </a>
-				<br>
-				<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FTowardDataScience&width=450&layout=standard&action=like&size=small&share=true&height=35&appId=687350028378644" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-				<nav>
-					<div class="header">Khanh's site</div>
-					<li><a style="text-align: left; color: #074B80"  href="https://www.facebook.com/TowardDataScience">phamdinhkhanh blog</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="https://www.facebook.com/groups/3235479620010379/">phamdinhkhanh AICode forum</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="https://kaggle.com/phamdinhkhanh">phamdinhkhanh kaggle</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="http://rpubs.com/phamdinhkhanh">phamdinhkhanh rpub</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="https://github.com/phamdinhkhanh">phamdinhkhanh github</a></li>
-					<br>
-					<div class="header">other's site</div>
-					<li><a style="text-align: left; color: #074B80"  href="https://www.facebook.com/groups/machinelearningcoban/">machine learning cơ bản facebook</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="https://forum.machinelearningcoban.com/">machine learning cơ bản forum</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="https://machinelearningmastery.com">machine learning mastery</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="https://viblo.asia">viblosia</a></li>
-					<br>
-					<div class="header">Khóa học</div>
-					<li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs109/">Xác suất thống kê(Probability): CS109</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs246/">Bigdata: CS246</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="http://cs231n.stanford.edu/">Computer vision cơ bản: CS231N</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs224n/">Natural Language Processing: CS224N</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs224w/">Khoá phân tích mạng lưới (analysis of network): CS224W</a></li>
-					<li><a style="text-align: left; color: #074B80"  href="https://web.stanford.edu/class/cs20si/">Khóa học Tensorflow: CS20SI</a></li>
-				</nav>
-			</div>
-		</div>
-	</div>
-
-	<footer style="margin-top: 10rem"></footer>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- Config MathJax  -->
-	<script>
-		window.MathJax = {
-			tex: {
-			inlineMath: [['$', '$'], ['\\(', '\\)']]
-			},
-			skipHtmlTags: [
-				'script', 'noscript', 'style', 'textarea', 'pre'
-			],
-		};
-	</script>
-	<script type="text/javascript" id="MathJax-script" async
-	  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-	</script>
-
-	
-	
-
-	<!-- Google Analytics -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-89509207-1', 'auto');
-		// ga('send', 'pageview');
-		ga('send', 'pageview', {
-		'page': '/',
-		'title': ''
-		});
-	</script>
-	
-	
-	<!-- Google Tag Manager -->
-	<script>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-KTCD8BX');
-	</script>
-	<!-- End Google Tag Manager -->
-
-	
+    <div id="banner">
+        <img src="banner_image_url" alt="Banner">
+    </div>
+    <div id="container">
+        <div id="menu">
+            <ul>
+                <li><a href="page1_url">Trang 1</a></li>
+                <li><a href="page2_url">Trang 2</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="toolbar">
+                <button onclick="goBack()">⬅️</button>
+                <button onclick="goToTop()">⬆️</button>
+                <input type="text" id="page-number" value="1">
+                <button onclick="goToBottom()">⬇️</button>
+                <button onclick="goForward()">➡️</button>
+            </div>
+            <div id="page-content">
+                page_content
+            </div>
+            <div id="toolbar">
+                <button onclick="goBack()">⬅️</button>
+                <button onclick="goToTop()">⬆️</button>
+                <input type="text" id="page-number" value="1">
+                <button onclick="goToBottom()">⬇️</button>
+                <button onclick="goForward()">➡️</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goForward() {
+            window.history.forward();
+        }
+        function goToTop() {
+            window.scrollTo(0, 0);
+        }
+        function goToBottom() {
+            window.scrollTo(0,document.body.scrollHeight);
+        }
+    </script>
 </body>
 </html>
