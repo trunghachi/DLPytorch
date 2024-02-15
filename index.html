@@ -1,67 +1,991 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Trang chủ</title>
-    <style>
-        #container {
-            display: flex;
-        }
-        #menu {
-            width: 20%;
-        }
-        #content {
-            width: 80%;
-        }
-        #toolbar {
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="utf-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<title>Khoa học dữ liệu</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Style for main home page -->
+<link rel="stylesheet" href="/assets/css/styles.css?t=2022-06-10 07:47:53 +0000">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link rel="icon" type="image/jpg" href="/assets/images/logo.jpg" sizes="32x32">
+<link rel="canonical" href="https://phamdinhkhanh.github.io"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="author" content="Phạm Đình Khánh" />
+<meta property="og:title" content="" />
+<meta property="og:site_name" content="Khanh's blog" />
+<meta property="og:url" content="https://phamdinhkhanh.github.io" />
+<meta property="og:description" content="" />
+
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="" />
+
+
+<meta property="article:author" content="Khanh" />
+<meta property="article:section" content="" />
+
+<link rel="alternate" type="application/atom+xml" title="Khanh's blog - Atom feed" href="/feed.xml" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3V21G183P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L3V21G183P');
+</script>
 </head>
+<style>
+body {
+  padding: 0 7.5%;
+}
+</style>
+
 <body>
-    <div id="banner">
-        <img src="banner_image_url" alt="Banner">
-    </div>
-    <div id="container">
-        <div id="menu">
-            <ul>
-                <li><a href="preface1.md">Trang 1</a></li>
-                <li><a href="get-started.md">Trang 2</a></li>
-            </ul>
-        </div>
-        <div id="content">
-            <div id="toolbar">
-                <button onclick="goBack()">Quay lại</button>
-                <button onclick="goToTop()">Về đầu</button>
-                <input type="text" id="page-number" value="1">
-                <button onclick="goToBottom()">Về cuối</button>
-                <button onclick="goForward()">Tiếp theo</button>
-            </div>
-            <div id="page-content">
-                page_content
-            </div>
-            <div id="toolbar">
-                <button onclick="goBack()">Quay lại</button>
-                <button onclick="goToTop()">Về đầu</button>
-                <input type="text" id="page-number" value="1">
-                <button onclick="goToBottom()">Về cuối</button>
-                <button onclick="goForward()">Tiếp theo</button>
-            </div>
-        </div>
-    </div>
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-        function goForward() {
-            window.history.forward();
-        }
-        function goToTop() {
-            window.scrollTo(0, 0);
-        }
-        function goToBottom() {
-            window.scrollTo(0,document.body.scrollHeight);
-        }
-    </script>
+	<div content = "container">
+		<div class="row">
+			<div class="col-md-2 hidden-xs hidden-sm">
+				<a  href="/">
+					<img width="100%" style="padding-bottom: 3mm;" src="/assets/images/img.png" /> </a>
+				<br>
+				<nav>
+					<div class="header">Latest</div>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2021/03/13/KnownledgeDistillation.html">Bài 56 - Knowledge Distillation</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2021/02/08/BuildBlog.html">Appendix 2 - How this blog is built</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2021/02/01/StarGAN.html">Lesson 55 - StarGAN Multi-Domain Image2Image translation</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2021/01/20/CycleGAN.html">Lesson 54 - CycleGAN Unpaired image to image translation</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/12/19/Resnet.html">Lesson 53 - ResNet model</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/11/30/ParallelComputingPython.html">Bài 52 - Parallel Computing on Python</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/11/23/Quantization.html">Bài 51 - Quantization trong deep learning</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/11/17/DockerDL.html">Bài 50 - Docker cho Deep Learning</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/11/13/pix2pixGAN.html">Bài 49 - Pix2Pix GAN</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/09/19/MobileNet.html">Bài 48 - Mobilenet model</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/08/23/FocalLoss.html">Bài 47 - Focal Loss trong RetinaNet</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/08/13/ModelMetric.html">Bài 46 - Đánh giá mô hình phân loại trong ML</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/08/09/ConditionalGAN.html">Bài 45 - Conditional GAN (cGAN)</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/07/25/GAN_Wasserstein.html">Bài 44 - Model Wasserstein GAN (WGAN)</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/07/13/GAN.html">Bài 43 - Model GAN</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/06/20/Unet.html">Bài 42 - Thực hành Unet</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/06/18/DeepLab.html">Bài 41 - DeepLab Sentiment Segmentation</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/06/10/ImageSegmention.html">Bài 40 - Image Segmentation</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/06/04/PhoBERT_Fairseq.html">Bài 39 - Thực hành ứng dụng BERT</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/05/31/CNNHistory.html">Bài 38 - Các kiến trúc CNN hiện đại</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/05/28/TransformerThemDauTV.html">Bài 37 - Transformer thêm dấu Tiếng Việt</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/05/23/BERTModel.html">Bài 36 - BERT model</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/05/05/MultitaskLearning_MultiBranch.html">Bài 35 - Multitask Learning - Multi Branch</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/04/22/MultitaskLearning.html">Bài 34 - Multitask Learning</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/04/15/TransferLearning.html">Bài 33 - Phương pháp Transfer Learning</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/04/09/TensorflowDataset.html">Bài 32 - Kĩ thuật tensorflow Dataset</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/04/03/AWS.html">Bài 31 - Amazon Virtual Machine Deep Learning</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/03/28/deployTensorflowJS.html">Bài 30 - Xây dựng Web AI trên tensorflow js</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/03/23/FlaskRestAPI.html">Bài 29 - Xây dựng Flask API cho mô hình deep learning</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/03/21/faceNet.html">Bài 28 - Thực hành training Facenet</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/03/12/faceNetAlgorithm.html">Bài 27 - Mô hình Facenet trong face recognition</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/03/10/DarknetGoogleColab.html">Bài 26 - Huấn luyện YOLO darknet trên google colab</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/03/09/DarknetAlgorithm.html">Bài 25 - YOLO You Only Look Once</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/02/17/ImbalancedData.html">Bài 24 - Mất cân bằng dữ liệu (imbalanced dataset)</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/02/11/NARSyscom2015.html">Bài 23 - Neural Attentive Session-Based Recommendation</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/01/17/ScoreCard.html">Bài 22 - Scorecard model</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2020/01/06/ImagePreprocessing.html">Bài 21 - Tiền xử lý ảnh OpenCV</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/12/26/Sorfmax_Recommendation_Neural_Network.html">Bài 20 - Recommendation Neural Network</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/12/12/ARIMAmodel.html">Bài 19 - Mô hình ARIMA trong time series</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/12/02/DeepLearningLayer.html">Bài 18 - Các layers quan trọng trong deep learning</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/11/22/HOG.html">Bài 17 - Thuật toán HOG (Histrogram of oriented gradient)</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/11/08/RFMModel.html">Bài 16 - Model RFM phân khúc khách hàng</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/11/04/Recommendation_Compound_Part1.html">Bài 15 - collaborative và content-based filtering</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/10/22/googleHeatmap.html">Bài 14 - Biểu đồ trên Google Map</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/10/05/SSDModelObjectDetection.html">Bài 13 - Model SSD trong Object Detection</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/09/29/OverviewObjectDetection.html">Bài 12 - Các thuật toán Object Detection</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/09/16/VisualizationPython.html">Bài 11 - Visualization trong python</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/09/08/LDATopicModel.html">Bài 10 - Thuật toán LDA - Xác định Topic</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/08/25/PyTorch_Torchtext_Tutorial.html">Bài 9 - Pytorch - Buổi 3 - torchtext module NLP</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/08/22/convolutional-neural-network.html">Bài 8 - Convolutional Neural Network</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/08/19/CorrectSpellingVietnamseTonePrediction.html">Bài 7 - Pytorch - Buổi 2 - Seq2seq model correct spelling</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/08/10/PytorchTurtorial1.html">Bài 6 - Pytorch - Buổi 1 - Làm quen với pytorch</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/07/15/PySparkSQL.html">Bài 5 - Model Pipeline - SparkSQL</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/06/18/AttentionLayer.html">Bài 4 -  Attention is all you need</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/05/10/Hypothesis_Statistic.html">Apenddix 1 - Lý thuyết phân phối và kiểm định thống kê</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/04/29/ModelWord2Vec.html">Bài 3 - Mô hình Word2Vec</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/04/22/Ly_thuyet_ve_mang_LSTM.html">Bài 2 - Lý thuyết về mạng LSTM part 2</a></li>
+					
+					<li><a style="text-align: left; color: #074B80"  href="/2019/01/07/Ky_thuat_feature_engineering.html">Bài 1 - Kĩ thuật feature engineering</a></li>
+					
+				</nav>
+			</div>
+			<div class="col-md-8 col-xs-12" style="z-index:1">
+				<nav class="navbar navbar-inverse" style="background-color: #046897">
+					<div class = "container-fluid">
+						<div class = "navbar-header">
+							<a class="navbar-brand" href="/">
+								<p style="color:#FFF">Khoa học dữ liệu - Khanh's blog</p>
+							</a>
+							<button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li><a href="/home"><span style="color: #fff"> Home</span></a></li>
+								<li><a href="/about"><span style="color: #fff"> About</span></a></li>
+								<!-- <li><a href="/da"><span style="color: #fff">Data Analytics</span></a></li> -->
+								<!-- <li><a href="/cv"><span style="color: #fff">Computer Vision</span></a></li> -->
+								<!-- <li><a href="/nlp"><span style="color: #fff">NLP</span></a></li> -->
+								<!-- <li><a href="/code"><span style="color: #fff">Code</span></a></li> -->
+								<li><a href="/book"><span style="color: #fff">Book</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="PageNavigation">
+				</div>
+				<h1 itemprop="name" class="post-title"></h1>
+				<div id="bootstrap-overrides">
+					<div>
+<ul>
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2021/03/13/KnownledgeDistillation.html">Bài 56 - Knowledge Distillation</a></h2>
+		<br />
+		<p>
+		1. Khái niệm về knowledge distillation Knowledge distillation được giới thiệu bởi Geoffrey Hinton vào năm 2015 là một trong những phương pháp thuộc họ transfer learning. Thuật toán lấy ý tưởng chính từ quá trình học tập ở người khi mà kiến thức được truyền đạt từ giảng viên có hiểu biết tốt hơn tới người học có hiểu biết kém hơn. Trong kỹ thuật knowledge distillation thì một model lớn hơn sẽ đóng...
+		</p>
+		<a href="/2021/03/13/KnownledgeDistillation.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>13 Mar 2021</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2021/02/08/BuildBlog.html">Appendix 2 - How this blog is built</a></h2>
+		<br />
+		<p>
+		1. Why do i write this post? 1.1. Why write blog is good? I learn one experience that is: “The best way to learn something is teach them again to the other” Actually, I am quite normal learner when i start writing my blog. The unique motivation lead me to patiently write blog is that I have plenty of spare time. And I think I have to do something to fill in empty box. And...
+		</p>
+		<a href="/2021/02/08/BuildBlog.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>08 Feb 2021</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2021/02/01/StarGAN.html">Lesson 55 - StarGAN Multi-Domain Image2Image translation</a></h2>
+		<br />
+		<p>
+		1. StarGAN Multi-Domain Image-to-Image translation In previous sections, you are introduced about:: pix2pix GAN is a kind of conditional GAN that you enable to control desired output. The loss function is the combination of adversarial loss and L1-loss. To train pix2pix GAN required to couple source and target images. So it is low performance on small and scarce dataset. CycleGAN that is unsupervised GAN model enable to learn how to translate from one source dataset...
+		</p>
+		<a href="/2021/02/01/StarGAN.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>01 Feb 2021</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2021/01/20/CycleGAN.html">Lesson 54 - CycleGAN Unpaired image to image translation</a></h2>
+		<br />
+		<p>
+		1. Introduction In reality, there are many image to image translation tasks such as: Transforming image color between two pictures. Changing season from summer to winter. Changing dark to night and night to dark. Transforming colored images into sketch images. Translating hourse into zebra. Translating photo into the painting of the dead artists. When face up with these tasks related to image to image translation, CycleGAN may be the best facility you should think first....
+		</p>
+		<a href="/2021/01/20/CycleGAN.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>20 Jan 2021</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/12/19/Resnet.html">Lesson 53 - ResNet model</a></h2>
+		<br />
+		<p>
+		1. ResNet history ResNet is outstanding CNN network that have both model size and accuracy is bigger than MobileNet. It was firstly launched in 2015 in a paper Deep Resual Learning for Image Recognition and very soon to gain the first rank on ILSVLC 2015. It allow you to tunning the model’s deepth according to your requirement as flexiable as possible. Thus, i guess that you have ever meet several kinds of ResNet deepth version...
+		</p>
+		<a href="/2020/12/19/Resnet.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>19 Dec 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/11/30/ParallelComputingPython.html">Bài 52 - Parallel Computing on Python</a></h2>
+		<br />
+		<p>
+		1. Tại sao cần xử lý song song Trong quá trình xây dựng các ứng dụng deep learning trên python, mình nhận ra rằng để tạo ra một ứng dụng thì không khó. Nhưng để tạo ra một ứng dụng đáp ứng được tốc độ xử lý, độ chính xác và mức độ sử dụng resource thì cần phải tối ưu rất nhiều thứ. Bạn sẽ phải quan tâm đến các khía cạnh như: Giảm...
+		</p>
+		<a href="/2020/11/30/ParallelComputingPython.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>30 Nov 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/11/23/Quantization.html">Bài 51 - Quantization trong deep learning</a></h2>
+		<br />
+		<p>
+		1. Tại sao cần quantization Khi tôi viết bài này thì quantization đã khá phổ biến trong Deep Learning. Đây là một khái niệm không còn mới, nhưng lại rất quan trọng. Vậy nó quan trọng như thế nào và vì sao chúng ta lại cần quantization ? Các mô hình deep learning ngày càng đạt độ chính xác cao hơn qua thời gian. Không khó để bạn tìm thấy những mô hình đạt độ...
+		</p>
+		<a href="/2020/11/23/Quantization.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>23 Nov 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/11/17/DockerDL.html">Bài 50 - Docker cho Deep Learning</a></h2>
+		<br />
+		<p>
+		1. Docker Trước khi bắt đầu bài viết này, chắc các bạn thắc mắc Docker thì có liên quan gì đến deep learning? Câu trả lời tất nhiên là có: Việc cài đặt các deep learning framework dễ xảy ra lỗi, docker giúp bạn có thể tận dụng lại các môi trường đã được build sẵn để không cần phải cài đặt phức tạp. Docker giúp triển khai môi trường huấn luyện các mô hình...
+		</p>
+		<a href="/2020/11/17/DockerDL.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>17 Nov 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/11/13/pix2pixGAN.html">Bài 49 - Pix2Pix GAN</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Gần đây trong công việc của mình tôi đã sử dụng các mô hình GAN cho các tác vụ sinh ảnh nhằm bổ sung thêm dữ liệu cho các mô hình. Kết quả khá lạc quan là độ chính xác của mô hình đã được cải thiện đáng kể. Tôi nghĩ rằng GAN là lớp mô hình rất hay mà nếu bạn biết áp dụng một cách khéo léo vào data...
+		</p>
+		<a href="/2020/11/13/pix2pixGAN.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>13 Nov 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/09/19/MobileNet.html">Bài 48 - Mobilenet model</a></h2>
+		<br />
+		<p>
+		1. Nhu cầu về lightweight model Sự phát triển về mặt học thuật của thị giác máy tính đã tạo ra rất nhiều các models khác nhau với độ chính xác được đo lường trên bộ dữ liệu ImageNet ngày càng được cải thiện. Tuy nhiên không phải toàn bộ trong số chúng đều có thể sử dụng được trên các thiết bị gặp hạn chế về tài nguyên tính toán. Để phát triển được...
+		</p>
+		<a href="/2020/09/19/MobileNet.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>19 Sep 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/08/23/FocalLoss.html">Bài 47 - Focal Loss trong RetinaNet</a></h2>
+		<br />
+		<p>
+		1. Focal Loss Function Trong bài báo được trình bày vào tháng 1, 2018 tựa đề Focal Loss for Dense Object Detection, nhóm tác giả Tsung-Yi Lin, Priya Goyal, ... của FAIR (Facebook AI research) đã công bố một hàm loss function mới mang tính đột phá trong việc cải thiện hiệu xuất của lớp mô hình one-stage detector trong object detection. Dựa trên nhận định rằng mất cân bằng dữ liệu giữa các nhóm...
+		</p>
+		<a href="/2020/08/23/FocalLoss.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>23 Aug 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/08/13/ModelMetric.html">Bài 46 - Đánh giá mô hình phân loại trong ML</a></h2>
+		<br />
+		<p>
+		1. Đánh giá mô hình Trong quá trình xây dựng một mô hình machine learning, một phần không thể thiếu để biết được chất lượng của mô hình như thế nào đó chính là đánh giá mô hình. Đánh giá mô hình giúp chúng ta lựa chọn được mô hình phù hợp nhất đối với bài toán của mình. Tuy nhiên để tìm được thước đo đánh giá mô hình phù hợp thì chúng ta...
+		</p>
+		<a href="/2020/08/13/ModelMetric.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>13 Aug 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/08/09/ConditionalGAN.html">Bài 45 - Conditional GAN (cGAN)</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Ở những bài trước chúng ta đã được tìm hiểu về model GAN và huấn luyện model GAN theo phương pháp Wasserstein. Những model này sẽ biến đổi noise vector ngẫu nhiên thành hình ảnh output dựa trên mạng generator. Chúng ta cùng khái quát lại kiến trúc của model GAN qua hình minh họa và tóm lược bên dưới : Mô hình GAN sẽ huấn luyện đồng thời cả hai...
+		</p>
+		<a href="/2020/08/09/ConditionalGAN.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>09 Aug 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/07/25/GAN_Wasserstein.html">Bài 44 - Model Wasserstein GAN (WGAN)</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Huấn luyện model GAN là một việc không dễ dàng bởi trong quá trình huấn luyện model thường xuyên không thể hội tụ đến điểm cân bằng. Một trong những cách chúng ta có thể áp dụng để khắc phục sự không hội tụ đó là thay đổi hàm loss function. Trong bài viết này chúng ta sẽ cùng tìm hiểu phương pháp huấn luyện Wasserstein GAN và phạt WGAN-Gradient. Nếu...
+		</p>
+		<a href="/2020/07/25/GAN_Wasserstein.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>25 Jul 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/07/13/GAN.html">Bài 43 - Model GAN</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Một trong những xu hướng nghiên cứu thu hút được đông đảo các nhà khoa học, có tính ứng dụng cao và phát triển mạnh mẽ trong những năm gần đây trong Deep Learning có lẽ là GAN. Chính vì thế bài viết này mình sẽ giới thiệu về GAN, các ứng dụng, kiến trúc thuật toán và phương pháp huấn luyện theo hướng tiếp cận đơn giản nhất, dựa trên...
+		</p>
+		<a href="/2020/07/13/GAN.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>13 Jul 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/06/20/Unet.html">Bài 42 - Thực hành Unet</a></h2>
+		<br />
+		<p>
+		1. Tiềm năng của Semantic Segmentation trong y sinh 1.1. Ứng dụng của Semantic Segmentation trong y sinh Trong y tế có rất nhiều các bài toán có thể ứng dụng Semantic Segmentation, mang lại hiệu quả và đột phá trong chuẩn đoán và điều trị bệnh. Một trong số những ứng dụng điển hình đó chính là chuẩn đoán khối u qua hình ảnh. Những loại ung thư phổ biến như ung thư vú,...
+		</p>
+		<a href="/2020/06/20/Unet.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>20 Jun 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/06/18/DeepLab.html">Bài 41 - DeepLab Sentiment Segmentation</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Ở Bài 40 - Image Segmentation chúng ta đã được tìm hiểu về một số thuật toán Image Segmentation. Thông qua đó, chúng ta đã nắm được cơ bản về input/output, kiến trúc của một mô hình Image Segmentation và một số lớp mô hình Image Segmentation phổ biến như Mask-CNN, U-Net, FCN. Ở bài này chúng ta sẽ tiếp tục tìm hiểu những kiến trúc Image Segmentation hiện đại hơn...
+		</p>
+		<a href="/2020/06/18/DeepLab.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>18 Jun 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/06/10/ImageSegmention.html">Bài 40 - Image Segmentation</a></h2>
+		<br />
+		<p>
+		1. Khái quát các bài toán trong Computer Vision 1.1. Các dạng bài toán trong Computer Vision Các bài toán và ứng dụng của computer vision Hình 1: Sơ đồ các tác vụ của computer vision trong AI. Các bài toán trong computer vision khá đa dạng. Image classification là lớp bài toán phổ biến nhất giúp chúng ta phân loại ảnh. Object detection thì không chỉ phân loại ảnh mà còn xác định vị...
+		</p>
+		<a href="/2020/06/10/ImageSegmention.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>10 Jun 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/06/04/PhoBERT_Fairseq.html">Bài 39 - Thực hành ứng dụng BERT</a></h2>
+		<br />
+		<p>
+		1. BERT trong Tiếng Việt Ở bài 36 chúng ta đã tìm hiểu về các kiến trúc của model BERT gồm BERT Base, BERT Large và những ứng dụng trong các tác vụ NLP của nó. Sự ra đời của model BERT là một cột mốc rất quan trọng của ngành NLP mà có thể phân chia thành giai đoạn phát triển trước BERT và sau BERT. Các kết quả ứng dụng BERT đã phá...
+		</p>
+		<a href="/2020/06/04/PhoBERT_Fairseq.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>04 Jun 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/05/31/CNNHistory.html">Bài 38 - Các kiến trúc CNN hiện đại</a></h2>
+		<br />
+		<p>
+		1. Tiến trình phát triển của CNN 1.1. Giới thiệu chung Mạng CNN ra đời đã thúc đẩy quá trình phát triển của ngành computer vision. Hiện tại có rất nhiều các kiến trúc mạng CNN khác nhau và các kiến trúc mới vẫn đang tiếp tục được khám phá ngày qua ngày. Nhưng ít ai biết rằng đằng sau những khám phá đó là một tiến trình khoa học lâu dài và bền bỉ...
+		</p>
+		<a href="/2020/05/31/CNNHistory.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>31 May 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/05/28/TransformerThemDauTV.html">Bài 37 - Transformer thêm dấu Tiếng Việt</a></h2>
+		<br />
+		<p>
+		1. Dữ liệu Thêm dấu Tiếng Việt có lẽ đã không còn là một bài toán quá xa lạ đối với cộng đồng AI Việt Nam. Đây là bài toán có tính ứng dụng cao và nhiều doanh nghiệp rất cần. Bản thân công ty mình (Adayroi trước đây) cũng có một dự án như thế. Trước đó thì mình chỉ sử dụng thuật toán LSTM và kết quả trả ra không tốt đối với...
+		</p>
+		<a href="/2020/05/28/TransformerThemDauTV.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>28 May 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/05/23/BERTModel.html">Bài 36 - BERT model</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung 1.1. Một số khái niệm Trước khi đi vào bài này, chúng ta cần hiểu rõ một số khái niệm: Nhiệm vụ phía sau (Downstream task): Là những tác vụ supervised-learning được cải thiện dựa trên những pretrained model. VD: Chúng ta sử dụng lại các biểu diễn từ học được từ những pretrained model trên bộ văn bản lớn vào một tác vụ phân tích cảm xúc huấn luyện trên...
+		</p>
+		<a href="/2020/05/23/BERTModel.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>23 May 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/05/05/MultitaskLearning_MultiBranch.html">Bài 35 - Multitask Learning - Multi Branch</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung. ở bài trước chúng ta đã tìm hiểu về học đa tác vụ (multitask learning). Thuật toán có khả năng dự báo nhiều tác vụ trên cùng một đầu vào, có sự chia sẻ đặc trưng giữa các tác vụ trong quá trình dự báo mà không cần xây dựng nhiều mô hình độc lập. Tiết kiệm được tài nguyên và thời gian huấn luyện. Multitask learning thường được ứng dụng...
+		</p>
+		<a href="/2020/05/05/MultitaskLearning_MultiBranch.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>05 May 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/04/22/MultitaskLearning.html">Bài 34 - Multitask Learning</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu về Multitask learning 1.1 Khái niệm multitask learning Các bài toán phân loại thông thường của classification có một hạn chế đó là với mỗi ảnh đầu vào chúng ta chỉ dự đoán được một nhãn duy nhất cho ảnh. Tuy nhiên trên thực thế có thể xuất hiện nhiều hơn 1 nhãn trên ảnh. Hình 1: Kết quả trả về của thuật toán image classification chỉ cho phép đưa ra 1...
+		</p>
+		<a href="/2020/04/22/MultitaskLearning.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>22 Apr 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/04/15/TransferLearning.html">Bài 33 - Phương pháp Transfer Learning</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Trong quá trình xây dựng mô hình chắc hẳn bạn đã gặp tình huống mô hình của bạn dự báo không chuẩn xác. Mặc dù đã áp dụng những kiến trúc phức tạp và được coi là state-of-art. Bạn nghi ngờ vấn đề nằm ở dữ liệu gán nhãn sai nhưng kiểm tra cho thấy vấn đề không nằm ở gán nhãn. Bạn loay hoay với câu hỏi tại sao mô...
+		</p>
+		<a href="/2020/04/15/TransferLearning.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>15 Apr 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/04/09/TensorflowDataset.html">Bài 32 - Kĩ thuật tensorflow Dataset</a></h2>
+		<br />
+		<p>
+		1. Vai trò của tensorflow Dataset Chắc hẳn các bạn từng thắc mắc vì sao trong deep learning các bộ dữ liệu bigdata có kích thước rất lớn mà các máy tính có RAM nhỏ hơn vẫn có thể huấn luyện được? Xuất phát từ lý do đó, bài này mình sẽ lý giải các cách thức dữ liệu có thể được truyền vào mô hình để huấn luyện theo cách tiếp cận dễ hiểu...
+		</p>
+		<a href="/2020/04/09/TensorflowDataset.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>09 Apr 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/04/03/AWS.html">Bài 31 - Amazon Virtual Machine Deep Learning</a></h2>
+		<br />
+		<p>
+		1. Amazon web services Nếu các bạn đã từng làm việc với bigdata chắc sẽ không còn xa lạ với các dịch vụ của Amazon Web Serives. Đây là tổng hợp các giải pháp của Amazon như cơ sở dữ liệu, lưu trữ, tính toán, giải pháp AI, machine learning, bảo mật, networking, phân tích dữ liệu, triển khai web, app, cho thuê máy chủ,…. Hệ sinh thái Amazon Web Services là một hệ sinh...
+		</p>
+		<a href="/2020/04/03/AWS.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>03 Apr 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/03/28/deployTensorflowJS.html">Bài 30 - Xây dựng Web AI trên tensorflow js</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Ở bài trước mình đã giới thiệu với các bạn cách nào để xây dựng được một API và vai trò của API đối với hoạt động của các ứng dụng. Tiếp nối bài trước, ở bài này mình sẽ hướng dẫn mọi người làm thể nào để xây dựng và triển khai một ứng dụng web trên heroku. Ý tưởng của ứng dụng đó là chúng ta sẽ dự đoán...
+		</p>
+		<a href="/2020/03/28/deployTensorflowJS.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>28 Mar 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/03/23/FlaskRestAPI.html">Bài 29 - Xây dựng Flask API cho mô hình deep learning</a></h2>
+		<br />
+		<p>
+		1. Nhu cầu deploy model Quá trình huấn luyện mô hình mới chỉ tạo ra các sản phẩm chạy được trên jupyter notebook. Có một AI engineer khá nổi tiếng nói rằng: model trên jupyter notebook là model chết. Mình khá đồng tình với quan điểm này vì nếu không đưa sản phẩm lên production thì mọi việc chúng ta làm đều unusable. Với các doanh nghiệp lớn, để đưa được model vào ứng dụng...
+		</p>
+		<a href="/2020/03/23/FlaskRestAPI.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>23 Mar 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/03/21/faceNet.html">Bài 28 - Thực hành training Facenet</a></h2>
+		<br />
+		<p>
+		1. Cài đặt các package cần thiết Tiếp nối bài 27 model facenet. Trong bài này mình sẽ hướng dẫn các bạn cách thức xây dựng và huấn luyện model facenet cho bộ dữ liệu của mình. Bài thực hành được viết trên google colab. Các bạn mở trực tiếp link hướng dẫn facenet để bắt đầu các bước nhé. Ngoài ra để tạo thuận lợi cho việc thực hành, mọi git repository của blog...
+		</p>
+		<a href="/2020/03/21/faceNet.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>21 Mar 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/03/12/faceNetAlgorithm.html">Bài 27 - Mô hình Facenet trong face recognition</a></h2>
+		<br />
+		<p>
+		1. Hệ thống nhận diện khuôn mặt 1.1. Các ứng dụng phổ biến Vào năm 2012, tôi vẫn còn nhớ facebook bắt dầu có chức năng nhận diện khuôn mặt. Khi đó tôi còn là một sinh viên chưa biết đến khái niệm trí tuệ nhân tạo. Tôi cực kì ấn tượng với khả năng kì diệu này. Tôi nghĩ chắc facebook phải thuê hàng ngàn người ngồi gán nhãn cho từng bức ảnh mỗi...
+		</p>
+		<a href="/2020/03/12/faceNetAlgorithm.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>12 Mar 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/03/10/DarknetGoogleColab.html">Bài 26 - Huấn luyện YOLO darknet trên google colab</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Ở bài này tôi sẽ hướng dẫn các bạn huấn luyện model YOLO trên google colab qua các khâu: Cấu hình cài đặt GPU. Chuẩn bị dữ liệu. Cấu hình mô hình. Huấn luyện và dự báo. Qúa trình huấn luyện YOLO sẽ rất dễ xảy ra lỗi nếu chưa có kinh nghiệm. Chính vì thế tôi sẽ tổng kết các lưu ý quan trọng về lỗi khi huấn luyện mô...
+		</p>
+		<a href="/2020/03/10/DarknetGoogleColab.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>10 Mar 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/03/09/DarknetAlgorithm.html">Bài 25 - YOLO You Only Look Once</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Có lẽ trong vài năm trở lại đây, object detection là một trong những đề tài rất hot của deep learning bởi khả năng ứng dụng cao, dữ liệu dễ chuẩn bị và kết quả ứng dụng thì cực kì nhiều. Các thuật toán mới của object detection như YOLO, SSD có tốc độ khá nhanh và độ chính xác cao nên giúp cho Object Detection có thể thực hiện được...
+		</p>
+		<a href="/2020/03/09/DarknetAlgorithm.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>09 Mar 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/02/17/ImbalancedData.html">Bài 24 - Mất cân bằng dữ liệu (imbalanced dataset)</a></h2>
+		<br />
+		<p>
+		1. Mất cân bằng dữ liệu (imbalanced dataset) Mất cân bằng dữ liệu là một trong những hiện tượng phổ biến của bài toán phân loại nhị phân (binary classification) như spam email, phát hiện gian lận, dự báo vỡ nợ, chuẩn đoán bệnh lý,…. Trong trường hợp tỷ lệ dữ liệu giữa 2 classes là 50:50 thì được coi là cân bằng. Khi có sự khác biệt trong phân phối giữa 2 classes, chẳng...
+		</p>
+		<a href="/2020/02/17/ImbalancedData.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>17 Feb 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/02/11/NARSyscom2015.html">Bài 23 - Neural Attentive Session-Based Recommendation</a></h2>
+		<br />
+		<p>
+		1. Các dạng mô hình Recommendation Ngày nay, các thuật toán recommendation ngày càng phát triển đa dạng bởi tính ứng dụng cao trong việc khuyến nghị và matching sản phẩm tới khách hàng trên các nền tảng website/app kinh doanh online. Recommendation có thể coi là vũ khí trong cuộc chơi của các ông lớn trong những ngành có tính đốt tiền cao như ecommerce, airbnb, logistic,…. Do đó đây là bài toán thu...
+		</p>
+		<a href="/2020/02/11/NARSyscom2015.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>11 Feb 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/01/17/ScoreCard.html">Bài 22 - Scorecard model</a></h2>
+		<br />
+		<p>
+		1. ScoreCard model là gì? Scorecard model là một lớp mô hình được ứng dụng trong nhiều lĩnh vực như tài chính, kinh doanh, quản lý xã hội. Mô hình Scorecard có tác dụng lượng hóa một hồ sơ cá nhân hoặc tổ chức thành một điểm tín nhiệm dựa trên khả năng xảy ra của một sự kiện nào đó như vỡ nợ, vi phạm luật. Dựa trên điểm tín nhiệm, các tổ chức...
+		</p>
+		<a href="/2020/01/17/ScoreCard.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>17 Jan 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2020/01/06/ImagePreprocessing.html">Bài 21 - Tiền xử lý ảnh OpenCV</a></h2>
+		<br />
+		<p>
+		1. Vai trò của tiền xử lý ảnh Khi phát triển một thuật toán phân loại ảnh chúng ta có thể gặp phải một số trường hợp không mong đợi như: Kết quả huấn luyện có độ chính xác rất cao trên cả tập huấn luyện (train dataset) và tập phát triển (dev dataset). Nhưng khi áp dụng vào thực tiễn lại cho độ chính xác thấp. Có rất nhiều các nguyên nhân dẫn tới...
+		</p>
+		<a href="/2020/01/06/ImagePreprocessing.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>06 Jan 2020</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/12/26/Sorfmax_Recommendation_Neural_Network.html">Bài 20 - Recommendation Neural Network</a></h2>
+		<br />
+		<p>
+		1. Ưu điểm của Recommendation Neural Network Ở bài trước chúng ta đã tìm hiểu về 2 thuật toán cơ bản trong recommendation đó là collaborative và content-based filtering. Ý tưởng chung của các thuật toán này đều là tìm cách ước lượng các giá trị rating của những cặp user-item chưa được rate bởi người dùng sao cho sai số so với giá trị thực tế là nhỏ nhất. Tuy nhiên những phương pháp...
+		</p>
+		<a href="/2019/12/26/Sorfmax_Recommendation_Neural_Network.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>26 Dec 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/12/12/ARIMAmodel.html">Bài 19 - Mô hình ARIMA trong time series</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu về chuỗi thời gian Dự báo chuỗi thời gian là một lớp mô hình quan trọng trong thống kê, kinh tế lượng và machine learning. Sở dĩ chúng ta gọi lớp mô hình này là chuỗi thời gian (time series) là vì mô hình được áp dụng trên các chuỗi đặc thù có yếu tố thời gian. Một mô hình chuỗi thời gian thường dự báo dựa trên giả định rằng các...
+		</p>
+		<a href="/2019/12/12/ARIMAmodel.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>12 Dec 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/12/02/DeepLearningLayer.html">Bài 18 - Các layers quan trọng trong deep learning</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Mỗi một mô hình deep learning đều có các layers đặc trưng giúp giải quyết các tác vụ cụ thể của từng bài toán deep learning. Chẳng hạn như trong xử lý ảnh chúng ta thường sử dụng mạng CNN - convolutional neural network để trích xuất đặc trưng trên các local regional của bức ảnh là các đường nét chính như dọc, ngang, chéo,…. Hoặc layer LSTM - long short...
+		</p>
+		<a href="/2019/12/02/DeepLearningLayer.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>02 Dec 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/11/22/HOG.html">Bài 17 - Thuật toán HOG (Histrogram of oriented gradient)</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu về thuật toán HOG 1.1. Giới thiệu chung Có rất nhiều các phương pháp khác nhau trong computer vision. Khi phân loại ảnh, chúng ta có thể áp dụng họ các mô hình CNN (Inception Net, mobile Net, Resnet, Dense Net, Alexnet, Unet,…) và khi phát hiện vật thể là các mô hình YOLO, SSD, Faster RCNN, Fast RCNN, Mask RCNN. Các thuật toán kể trên đều là những mô hình deep...
+		</p>
+		<a href="/2019/11/22/HOG.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>22 Nov 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/11/08/RFMModel.html">Bài 16 - Model RFM phân khúc khách hàng</a></h2>
+		<br />
+		<p>
+		I. Mô hình RFM (Recency - Frequency - Monetary model) Theo nguyên lý pareto 20% khách hàng sẽ mang lại 80% doanh số. Do đó doanh nghiệp cần xác định được những khách hàng quan trọng nhất để chăm sóc đặc biệt. Những tập khách hàng này được gọi là VIP, Priority hoặc khách hàng cao cấp, tùy từng doanh nghiệp có cách gọi khác nhau. Việc phân chia khách hàng thành các nhóm khác...
+		</p>
+		<a href="/2019/11/08/RFMModel.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>08 Nov 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/11/04/Recommendation_Compound_Part1.html">Bài 15 - collaborative và content-based filtering</a></h2>
+		<br />
+		<p>
+		1. Thuật toán recommendation Tại sao thế giới lại cần recommendation Recommendation hiểu một cách đơn giản là khuyến nghị một sản phẩm đến đúng người cần mua. Gỉa sử công ty của bạn hoạt động ở Việt Nam. Điều đó không có nghĩa rằng 95 triệu người Việt sẽ mua hàng của công ty bạn mà chỉ một phần trong số đó có nhu cầu. Trong số các khách hàng có nhu cầu thì...
+		</p>
+		<a href="/2019/11/04/Recommendation_Compound_Part1.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>04 Nov 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/10/22/googleHeatmap.html">Bài 14 - Biểu đồ trên Google Map</a></h2>
+		<br />
+		<p>
+		1. Các biểu đồ dạng bản đồ Bản đồ google map có thể thực hiện được những gì? Ngày nay cùng với sự phát triển của công cụ google map, việc visualize các báo cáo có liên quan đến vị trí địa lý trở nên dễ dàng hơn. Google map cũng support đa dạng các biểu đồ khác nhau như biểu đồ heatmap, biểu đồ scatter, biểu đồ line và rất nhiều các tùy biến...
+		</p>
+		<a href="/2019/10/22/googleHeatmap.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>22 Oct 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/10/05/SSDModelObjectDetection.html">Bài 13 - Model SSD trong Object Detection</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu SSD model Ở bài 12 tôi đã giới thiệu đến các bạn tổng thể các lớp mô hình khác nhau trong object detection. Các kiến trúc cũ hơn có thể kể đến như R-CNN, fast R-CNN. Đặc điểm của chúng là tốc độ xử lý thấp, không đáp ứng được trong việc object dection realtime. Các mạng start-of-art hơn như SSD và YOLOv2, YOLOv3 là những kiến trúc có tốc độ xử...
+		</p>
+		<a href="/2019/10/05/SSDModelObjectDetection.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>05 Oct 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/09/29/OverviewObjectDetection.html">Bài 12 - Các thuật toán Object Detection</a></h2>
+		<br />
+		<p>
+		1. Object detection là gì? Trước khi đi vào tìm hiểu object detection là gì, bạn đọc cần nắm vững một số khái niệm về mô hình phân loại ảnh (image classification), kiến trúc Convolutional neural network Pham Dinh Khanh, quá trình hình thành và phát triển mạng CNN đến nay Blog dlapplication. Sau khi đã đọc các bài hướng dẫn trên hãy quay lại bài viết này, bạn đọc sẽ hiểu những gì mà...
+		</p>
+		<a href="/2019/09/29/OverviewObjectDetection.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>29 Sep 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/09/16/VisualizationPython.html">Bài 11 - Visualization trong python</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu về biểu đồ Visualization hiểu một cách đơn giản là hình ảnh hóa dựa trên dữ liệu. Khái niệm của visualization rất ngắn gọn nhưng trên thực tế visualization lại là một mảng rất rộng và có thể coi là một lĩnh vực kết hợp của khoa học và nghệ thuật bởi nó vừa lên quan đến đồ họa (sử dụng hình học để diễn tả kết quả), vừa liên quan đến...
+		</p>
+		<a href="/2019/09/16/VisualizationPython.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>16 Sep 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/09/08/LDATopicModel.html">Bài 10 - Thuật toán LDA - Xác định Topic</a></h2>
+		<br />
+		<p>
+		1. Bài toán phân loại topic 1.1. Tại sao ta lại cần phân loại topic Trong cuộc sống sẽ rất cần đến các bài toán phân loại topics. Chẳng hạn như người đọc báo có thể dễ dàng lựa chọn thể loại báo ưa thích thông qua topics mà nó được gán. Người mua sách có thể lựa chọn được những sách liên quan đến chủ đề mà mình quan tâm thông qua topics. Hoặc...
+		</p>
+		<a href="/2019/09/08/LDATopicModel.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>08 Sep 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/08/25/PyTorch_Torchtext_Tutorial.html">Bài 9 - Pytorch - Buổi 3 - torchtext module NLP</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu về Torchtext Như chúng ta đã biết, qui trình xây dựng một mô hình trong NLP sẽ đi qua các bước sau: Đọc dữ liệu văn bản từ ổ cứng. Tokenize dữ liệu text. Tạo từ điển mapping word sang index. Chuyển các câu sang list index. Padding dữ liệu bằng phần tử 0 để list các index về chung 1 độ dài. Xác định batch để truyền dữ liệu vào model....
+		</p>
+		<a href="/2019/08/25/PyTorch_Torchtext_Tutorial.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>25 Aug 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/08/22/convolutional-neural-network.html">Bài 8 - Convolutional Neural Network</a></h2>
+		<br />
+		<p>
+		1. Lý thuyết về mạng tích chập 1.1. Giới thiệu tích chập Tích chập là một khái niệm trong xử lý tín hiệu số nhằm biến đổi thông tin đầu vào thông qua một phép tích chập với bộ lọc để trả về đầu ra là một tín hiệu mới. Tín hiệu này sẽ làm giảm những đặc trưng mà bộ lọc không quan tâm và chỉ giữ những đặc trưng chính. Tích chập thông...
+		</p>
+		<a href="/2019/08/22/convolutional-neural-network.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>22 Aug 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/08/19/CorrectSpellingVietnamseTonePrediction.html">Bài 7 - Pytorch - Buổi 2 - Seq2seq model correct spelling</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu chung Cùng với sự phát triển của deep learning nói chung. Ngày nay lớp các mô hình seq2seq càng tỏ ra hiệu quả trong nhiều tác vụ khác nhau như dịch máy, sửa lỗi chính tả, image captioning, recommendation, dự báo chuỗi thời gian,…. Nhờ sự phát triển của các kiến trúc mạng RNN hiện đại kèm theo các kĩ thuật learning hiệu quả như sử dụng thêm kiến trúc attention layer,...
+		</p>
+		<a href="/2019/08/19/CorrectSpellingVietnamseTonePrediction.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>19 Aug 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/08/10/PytorchTurtorial1.html">Bài 6 - Pytorch - Buổi 1 - Làm quen với pytorch</a></h2>
+		<br />
+		<p>
+		1. Pytorch là gì? Trong số những framework hỗ trợ deeplearning thì pytorch là một trong những framework được ưa chuộng nhiều nhất (cùng với tensorflow và keras), có lượng người dùng đông đảo, cộng đồng lớn mạnh. Vào năm 2019 framework này đã vươn lên vị trí thứ 2 về số lượng người dùng trong những framework hỗ trợ deeplearning (chỉ sau tensorflow). Đây là package sử dụng các thư viện của CUDA và...
+		</p>
+		<a href="/2019/08/10/PytorchTurtorial1.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>10 Aug 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/07/15/PySparkSQL.html">Bài 5 - Model Pipeline - SparkSQL</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu về SparkSQL SparkSQL là một module của Apache spark cho phép thực hiện các biến đổi với dữ liệu có cấu trúc và các tính toán dựa trên cụm xử lý. Spark cho phép tính toán data phân tán bằng việc chia dữ liệu thành nhiều phần nhỏ và thực hiện tính toán song song từng phần trên nhiều node server khác nhau. Chính vì thế tốc độ xử lý của spark...
+		</p>
+		<a href="/2019/07/15/PySparkSQL.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>15 Jul 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/06/18/AttentionLayer.html">Bài 4 -  Attention is all you need</a></h2>
+		<br />
+		<p>
+		1. Quá trình encoder và decoder Máy tính không thể học được từ các dữ liệu thô như bức ảnh, file text, file âm thanh, đoạn video. Do đó nó cần đến quá trình mã hóa thông tin sang dạng số và từ dạng số giải mã kết quả đầu ra. Đó chính là 2 quá trình encoder và decoder: Encoder: Là phrase chuyển input thành những features learning có khả năng học tập các...
+		</p>
+		<a href="/2019/06/18/AttentionLayer.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>18 Jun 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/05/10/Hypothesis_Statistic.html">Apenddix 1 - Lý thuyết phân phối và kiểm định thống kê</a></h2>
+		<br />
+		<p>
+		Phần 1 - Thống kê 1.1. Các đại lượng thống kê 1.Đại lượng ngẫu nhiên: Một đại lượng được coi là ngẫu nhiên nếu giá trị của nó là kết quả của một biến cố ngẫu nhiên. Chẳng hạn phép tung đồng xu đồng chất với 2 mặt xấp ngửa là một đại lượng ngẫu nhiên vì ta không hoàn toàn biết trước khả năng đồng xu rơi vào mặt xấp hoặc ngửa. Có 2...
+		</p>
+		<a href="/2019/05/10/Hypothesis_Statistic.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>10 May 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/04/29/ModelWord2Vec.html">Bài 3 - Mô hình Word2Vec</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu Word Representation. Khác với các mô hình xử lý ảnh khi các giá trị đầu vào là cường độ màu sắc đã được mã hoá thành giá trị số trong khoảng [0, 255]. Mô hình xử lý ngôn ngữ tự nhiên có đầu vào chỉ là các chữ cái kết hợp với dấu câu. Làm sao chúng ta có thể lượng hoá được những từ ngữ để làm đầu vào cho mạng...
+		</p>
+		<a href="/2019/04/29/ModelWord2Vec.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>29 Apr 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/04/22/Ly_thuyet_ve_mang_LSTM.html">Bài 2 - Lý thuyết về mạng LSTM part 2</a></h2>
+		<br />
+		<p>
+		1. Mạng nơ ron truy hồi (RNN - Recurrent Neural Network) Trong lý thuyết về ngôn ngữ, ngữ nghĩa của một câu được tạo thành từ mối liên kết của những từ trong câu theo một cấu trúc ngữ pháp. Nếu xét từng từ một đứng riêng lẻ ta không thể hiểu được nội dụng của toàn bộ câu, nhưng dựa trên những từ xung quanh ta có thể hiểu được trọn vẹn một câu...
+		</p>
+		<a href="/2019/04/22/Ly_thuyet_ve_mang_LSTM.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>22 Apr 2019</strong></span>
+	  </div>
+	
+  
+	  <div>
+		<hr />
+		<h2><a class="post-link" style="text-align: left; color: #204081; font-weight: bold" href="/2019/01/07/Ky_thuat_feature_engineering.html">Bài 1 - Kĩ thuật feature engineering</a></h2>
+		<br />
+		<p>
+		1. Giới thiệu về feature engineering Hiện nay các phương pháp học máy xuất hiện ngày càng nhiều và trở nên mạnh mẽ hơn. Các mô hình học máy như mạng neural network, Random Forest, Decision Tree, SVM, kNN,… đều là những mô hình có tính tường minh thấp, độ chính xác cao, độ phức tạp và tính linh hoạt cao. Các mô hình học máy đa dạng sẽ làm phong phú thêm sự lựa...
+		</p>
+		<a href="/2019/01/07/Ky_thuat_feature_engineering.html" sylte="color: #204081;">Xem tiếp » </a> 
+		<span class="post-date" style="float: right; "><strong>07 Jan 2019</strong></span>
+	  </div>
+	
+  
+</ul>
+
+</div>
+
+				</div>
+			</div>
+			<div class="col-md-2 hidden-xs hidden-sm">
+				<a  href="/">
+					<img width="100%" style="padding-bottom: 3mm;" src="/assets/images/logo.jpg" /> </a>
+				<br>
+				<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FTowardDataScience&width=450&layout=standard&action=like&size=small&share=true&height=35&appId=687350028378644" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				<nav>
+					<div class="header">Khanh's site</div>
+					<li><a style="text-align: left; color: #074B80"  href="https://www.facebook.com/TowardDataScience">phamdinhkhanh blog</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="https://www.facebook.com/groups/3235479620010379/">phamdinhkhanh AICode forum</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="https://kaggle.com/phamdinhkhanh">phamdinhkhanh kaggle</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="http://rpubs.com/phamdinhkhanh">phamdinhkhanh rpub</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="https://github.com/phamdinhkhanh">phamdinhkhanh github</a></li>
+					<br>
+					<div class="header">other's site</div>
+					<li><a style="text-align: left; color: #074B80"  href="https://www.facebook.com/groups/machinelearningcoban/">machine learning cơ bản facebook</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="https://forum.machinelearningcoban.com/">machine learning cơ bản forum</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="https://machinelearningmastery.com">machine learning mastery</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="https://viblo.asia">viblosia</a></li>
+					<br>
+					<div class="header">Khóa học</div>
+					<li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs109/">Xác suất thống kê(Probability): CS109</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs246/">Bigdata: CS246</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="http://cs231n.stanford.edu/">Computer vision cơ bản: CS231N</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs224n/">Natural Language Processing: CS224N</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="http://web.stanford.edu/class/cs224w/">Khoá phân tích mạng lưới (analysis of network): CS224W</a></li>
+					<li><a style="text-align: left; color: #074B80"  href="https://web.stanford.edu/class/cs20si/">Khóa học Tensorflow: CS20SI</a></li>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<footer style="margin-top: 10rem"></footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Config MathJax  -->
+	<script>
+		window.MathJax = {
+			tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+			},
+			skipHtmlTags: [
+				'script', 'noscript', 'style', 'textarea', 'pre'
+			],
+		};
+	</script>
+	<script type="text/javascript" id="MathJax-script" async
+	  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+	</script>
+
+	
+	
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-89509207-1', 'auto');
+		// ga('send', 'pageview');
+		ga('send', 'pageview', {
+		'page': '/',
+		'title': ''
+		});
+	</script>
+	
+	
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KTCD8BX');
+	</script>
+	<!-- End Google Tag Manager -->
+
+	
 </body>
 </html>
