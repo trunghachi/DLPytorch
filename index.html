@@ -2,14 +2,66 @@
 <html>
 <head>
     <title>Trang chủ</title>
+    <style>
+        #container {
+            display: flex;
+        }
+        #menu {
+            width: 20%;
+        }
+        #content {
+            width: 80%;
+        }
+        #toolbar {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
-    <h1>Chào mừng đến với trang chủ của tôi</h1>
-    <p>Đây là nội dung của trang chủ.</p>
-    <p>Để xem thêm, hãy truy cập các trang sau:</p>
-    <ul>
-        <li><a href="preface1.md">Trang Markdown 1</a></li>
-        <li><a href="get_started.md">Trang Markdown 2</a></li>
-    </ul>
+    <div id="banner">
+        <img src="banner_image_url" alt="Banner">
+    </div>
+    <div id="container">
+        <div id="menu">
+            <ul>
+                <li><a href="page1_url">Trang 1</a></li>
+                <li><a href="page2_url">Trang 2</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="toolbar">
+                <button onclick="goBack()">Quay lại</button>
+                <button onclick="goToTop()">Về đầu</button>
+                <input type="text" id="page-number" value="1">
+                <button onclick="goToBottom()">Về cuối</button>
+                <button onclick="goForward()">Tiếp theo</button>
+            </div>
+            <div id="page-content">
+                page_content
+            </div>
+            <div id="toolbar">
+                <button onclick="goBack()">Quay lại</button>
+                <button onclick="goToTop()">Về đầu</button>
+                <input type="text" id="page-number" value="1">
+                <button onclick="goToBottom()">Về cuối</button>
+                <button onclick="goForward()">Tiếp theo</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goForward() {
+            window.history.forward();
+        }
+        function goToTop() {
+            window.scrollTo(0, 0);
+        }
+        function goToBottom() {
+            window.scrollTo(0,document.body.scrollHeight);
+        }
+    </script>
 </body>
 </html>
