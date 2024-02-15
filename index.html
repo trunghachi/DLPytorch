@@ -24,44 +24,62 @@
     </div>
     <div id="container">
         <div id="menu">
-            <ul>
-                <li><a href="page1_url">Trang 1</a></li>
-                <li><a href="page2_url">Trang 2</a></li>
+            <ul id="page-list">
+                <!-- Danh sách các trang sẽ được tạo tự động bởi JavaScript -->
             </ul>
         </div>
         <div id="content">
             <div id="toolbar">
-                <button onclick="goBack()">⬅️</button>
-                <button onclick="goToTop()">⬆️</button>
-                <input type="text" id="page-number" value="1">
-                <button onclick="goToBottom()">⬇️</button>
-                <button onclick="goForward()">➡️</button>
+                <button onclick="navigate(-1)">⬅️</button>
+                <button onclick="navigate(1)">➡️</button>
             </div>
             <div id="page-content">
-                page_content
+                <!-- Nội dung của trang sẽ được tải vào đây bởi JavaScript -->
             </div>
             <div id="toolbar">
-                <button onclick="goBack()">⬅️</button>
-                <button onclick="goToTop()">⬆️</button>
-                <input type="text" id="page-number" value="1">
-                <button onclick="goToBottom()">⬇️</button>
-                <button onclick="goForward()">➡️</button>
+                <button onclick="navigate(-1)">⬅️</button>
+                <button onclick="navigate(1)">➡️</button>
             </div>
         </div>
     </div>
     <script>
-        function goBack() {
-            window.history.back();
+        var currentPage = 1;
+        var totalPages = 10;
+
+        // Tạo danh sách các trang
+        var pageList = document.getElementById('page-list');
+        for (var i = 1; i <= totalPages; i++) {
+            var listItem = document.createElement('li');
+            var link = document.createElement('a');
+            link.href = "#";
+            link.textContent = "Trang " + i;
+            link.onclick = loadPage.bind(null, i);
+            listItem.appendChild(link);
+            pageList.appendChild(listItem);
         }
-        function goForward() {
-            window.history.forward();
+
+        // Hàm để tải nội dung của một trang
+        function loadPage(pageNumber) {
+            currentPage = pageNumber;
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'page' + pageNumber + '.html', true);
+            xhr.onreadystatechange = function() {
+                if (this.readyState !== 4) return;
+                if (this.status !== 200) return; // or whatever error handling you want
+                document.getElementById('page-content').innerHTML = this.responseText;
+            };
+            xhr.send();
         }
-        function goToTop() {
-            window.scrollTo(0, 0);
+
+        // Hàm để điều hướng giữa các trang
+        function navigate(direction) {
+            var newPage = currentPage + direction;
+            if (newPage < 1 || newPage > totalPages) return;
+            loadPage(newPage);
         }
-        function goToBottom() {
-            window.scrollTo(0,document.body.scrollHeight);
-        }
+
+        // Tải trang đầu tiên khi trang web được tải
+        loadPage(1);
     </script>
 </body>
 </html>
