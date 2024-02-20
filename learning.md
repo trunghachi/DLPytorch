@@ -12,3 +12,6 @@
 ## Deep learning
 * [Practical Deep Learning](https://course.fast.ai/)
 * [UvA Deep Learning Tutorials](https://uvadlc-notebooks.readthedocs.io/en/latest/)
+
+## Tools
+* [Convert .ipynb to other formats](https://marketsplash.com/tutorials/jupyter/how-to-use-nbconvert-for-exporting-jupyter-notebooks/)
