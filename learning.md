@@ -16,4 +16,5 @@
 ## Tools
 * [Convert .ipynb to other formats](https://marketsplash.com/tutorials/jupyter/how-to-use-nbconvert-for-exporting-jupyter-notebooks/)
 * [Github Markdown: Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* VSCode: Foam extension, Foam: Show graph 
+* VSCode: Foam extension, Foam: Show graph
+* [circlize: circular visualization in R](https://github.com/jokergoo/circlize) 
